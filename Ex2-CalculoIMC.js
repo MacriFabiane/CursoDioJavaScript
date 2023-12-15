@@ -12,7 +12,7 @@ IMC em adultos:
 */
 const peso=46;
 const altura=1.70;
-const imc=peso/(altura*altura);
+const imc=peso/Math.pow(altura,2);
 
 console.log("IMC: "+imc.toFixed(1));
 if(imc.toFixed(1)<18.5){
